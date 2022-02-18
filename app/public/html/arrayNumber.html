@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Unlock Training</title>
+</head>
+
+<body>
+<h2>Input your array here!!</h2>
+<form action="../php/arrayNumber.php" method="post">
+<input type="text" name="array_number" id="array_number" placeholder="For example: 1,4,4.5,...">
+<br/>
+<span id="err_array_number"></span>
+<br/>
+<input type="submit" style="margin-top: 10px" onclick="return checkValidation()" value="submit">
+<div>-------------------------------------------------</div>
+</form>
+<h2>Your output below</h2>
+</body>
+</html>
+<script>
+    function checkValidation(){
+        let array_string = document.getElementById("array_number").value;
+        let array_number_string = array_string.replace(/[, ]+/g,' ');
+        let array_number = array_number_string.split(' ');
+        let flag = true;
+        for (let number of array_number) {
+            if(isNaN(number)) {
+                flag = false;
+                document.getElementById("err_array_number").innerHTML = 'Please enter input is string number!';
+            }
+        }
+        return flag;
+    }
+</script>
