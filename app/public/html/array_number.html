@@ -7,8 +7,8 @@
 
 <body>
 <h2>Input your array here!!</h2>
-<form action="../php/arrayNumber.php" method="post">
-<input type="text" name="array_number" id="array_number" placeholder="For example: 1,4,4.5,...">
+<form action="../php/ArrayNumber.php" method="post">
+<input type="text" name="arrayNumber" id="arrayNumber" placeholder="For example: 1,4,4.5,...">
 <br/>
 <span id="err_array_number"></span>
 <br/>
@@ -20,7 +20,7 @@
 </html>
 <script>
     function checkValidation(){
-        let array_string = document.getElementById("array_number").value;
+        let array_string = document.getElementById("arrayNumber").value;
         let array_number_string = array_string.replace(/[, ]+/g,' ');
         let array_number = array_number_string.split(' ');
         let flag = true;

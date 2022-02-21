@@ -8,8 +8,8 @@
     <title>Unlock Training</title>
 </head>
 <body>
-<h5>Check your programing languages that you love <a href="php/listChoice.php">here</a></h5>
-<h5>If you are stressful at coding,  <a href="./html/draw.html"> please click on me</a></h5>
-<h5>Enter your array, I will show you max, min, positive and negative numbers <a href="./html/arrayNumber.html"> please click on me</a></h5>
+<h5>Check your programing languages that you love <a href="html/list_choice.html">here</a></h5>
+<h5>If you are stressful at coding,  <a href="html/draw.html"> please click on me</a></h5>
+<h5>Enter your array, I will show you max, min, positive and negative numbers <a href="html/array_number.html"> please click on me</a></h5>
 </body>
 </html>
