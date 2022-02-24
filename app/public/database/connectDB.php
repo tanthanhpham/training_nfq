@@ -1,13 +1,19 @@
 <?php
-    $serverName = "docker_php";
-    $userName="root";
-    $dbName="training_nfq";
-    $passWord="password";
+/**
+ * @return mysqli|void
+ */
+function connectDB(){
+    $servername = "db";
+    $username="root";
+    $dbname="training_nfq";
+    $password="password";
 
-try {
-    $conn = new PDO("mysql:host=$serverName;dbname=$dbName;$userName;$passWord");
-    $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-    echo "Connect successfully";
-} catch (PDOException $e){
-    echo "Connection failed: ". $e->getMessage();
+    $conn = mysqli_connect($servername,$username,$password,$dbname,3306);
+
+    if(!$conn){
+        die('Could not connect');
+    }
+    return $conn;
 }
+
+

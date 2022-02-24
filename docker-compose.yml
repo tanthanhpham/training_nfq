@@ -8,10 +8,17 @@ services:
         volumes:
             - ./nginx/nginx.conf:/etc/nginx/conf.d/nginx.conf
             - ./app:/app
+        links:
+            - db
     php:
-        image: php:fpm
+        image: php:7.4-fpm
         volumes:
             - ./app:/app
+        build:
+             dockerfile: Dockerfile
+        links:
+            - db
+
     db:
         image: mysql:latest
         container_name: db
@@ -24,6 +31,7 @@ services:
             - MYSQL_ROOT_PASSWORD=password
             - MYSQL_USER=root
             - MYSQL_PASSWORD=password
+            - MYSQL_TCP_PORT=3306
         volumes:
             - ./dbdata:/var/lib/mysql
 
