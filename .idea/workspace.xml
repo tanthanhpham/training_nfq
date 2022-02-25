@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="470167e8-c548-46d2-b7c5-1ec022fb0c1c" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/app/public/php/AccountDetail.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/public/php/AccountList.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/public/php/CheckExistedEmail.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/public/php/HandleLogin.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/public/php/Login.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/public/php/Logout.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/public/php/UpdateAccount.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/database/connectDB.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/public/database/connectDB.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/html/array_number.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/public/html/array_number.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/html/draw.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/public/html/draw.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/html/list_choice.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/public/html/list_choice.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/public/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/layout/footer.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/public/layout/footer.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/layout/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/public/layout/header.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/layout/sidebar.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/public/layout/sidebar.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/navigate.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/public/navigate.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/php/ArrayNumber.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/public/php/ArrayNumber.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/php/HandleCookie.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/public/php/HandleCookie.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/php/ListChoice.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/public/php/ListChoice.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/php/Register.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/public/php/Register.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/php/utils/CheckValidation.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/public/php/utils/CheckValidation.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/php/utils/SetNotification.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/public/php/utils/SetNotification.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
+    <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
+    <execution />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration">
+    <include_path>
+      <path value="$PROJECT_DIR$/vendor/composer" />
+      <path value="$PROJECT_DIR$/vendor/phpstan/phpstan" />
+    </include_path>
+  </component>
+  <component name="ProjectId" id="25BXL3noxqeZxcUjEeBFyS4ROBA" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/public/html" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\NFQ_training\docker_php\app\public\html" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\NFQ_training\docker_php" />
+      <recent name="C:\NFQ_training\docker_php\app\public\php\utils" />
+      <recent name="C:\NFQ_training\docker_php\app\public\php" />
+      <recent name="C:\NFQ_training\docker_php\app\public\template\admin" />
+      <recent name="C:\NFQ_training\docker_php\app\public\PHP" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="470167e8-c548-46d2-b7c5-1ec022fb0c1c" name="Changes" comment="" />
+      <created>1645001393669</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1645001393669</updated>
+      <workItem from="1645001394704" duration="493000" />
+      <workItem from="1645002275046" duration="2567000" />
+      <workItem from="1645063535061" duration="21644000" />
+      <workItem from="1645148238785" duration="1985000" />
+      <workItem from="1645152484122" duration="12807000" />
+      <workItem from="1645418149559" duration="6623000" />
+      <workItem from="1645429196091" duration="7015000" />
+      <workItem from="1645437809981" duration="33000" />
+      <workItem from="1645437921366" duration="2371000" />
+      <workItem from="1645509469396" duration="16433000" />
+      <workItem from="1645592217059" duration="244000" />
+      <workItem from="1645598563476" duration="2000" />
+      <workItem from="1645606562439" duration="6197000" />
+      <workItem from="1645668481259" duration="26370000" />
+      <workItem from="1645758087732" duration="505000" />
+      <workItem from="1645758606967" duration="20431000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
