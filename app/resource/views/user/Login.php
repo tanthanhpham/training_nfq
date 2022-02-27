@@ -34,7 +34,7 @@ session_start();
                             ?>
                         </div>
                     <?php } ?>
-                    <form method="POST" action="./HandleLogin.php" class="register-form" id="login-form">
+                    <form method="POST" action="HandleLogin.php" class="register-form" id="login-form">
                         <div class="form-group">
                             <label for="email"><i class="zmdi zmdi-account material-icons-name"></i></label>
                             <input type="email" name="email" id="email" placeholder="Your Email" required/>
@@ -46,12 +46,11 @@ session_start();
                         <div class="form-group form-button">
                             <input type="submit" name="signin" id="signin" class="form-submit" value="Log in"/>
                         </div>
-
                     </form>
                 </div>
                 <div class="signup-image">
                     <figure><img src="../template/register/images/signup-image.jpg" alt="sing up image"></figure>
-                    <a href="./Register.php" class="signup-image-link">You don't have account!</a>
+                    <a href="/?view=signup" class="signup-image-link">You don't have account!</a>
                 </div>
             </div>
         </div>

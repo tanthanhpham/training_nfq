@@ -1,9 +1,9 @@
 <?php
-include './utils/CheckValidation.php';
+include '../../utils/CheckValidation.php';
 
 session_start();
 
-include '../database/connectDB.php';
+include '../../config/connectDB.php';
 
 $conn = connectDB();
 
