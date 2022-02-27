@@ -30,7 +30,7 @@ if(mysqli_num_rows($user) > 0) {
                         <h4 class="card-title">Edit Profile</h4>
                     </div>
                     <div class="card-body">
-                        <form action="../php/UpdateAccount.php" method="POST" enctype="multipart/form-data" >
+                        <form action="../../../public/php/UpdateAccount.php" method="POST" enctype="multipart/form-data" >
                             <div class="row">
                                 <div class="col-md-12 pr-3">
                                     <div class="form-group">
@@ -81,7 +81,7 @@ if(mysqli_num_rows($user) > 0) {
                     <div class="card-body">
                         <div class="author">
                             <a href="#">
-                                <img class="avatar border-gray" src="../images/TanThanh.jpg" alt="...">
+                                <img class="avatar border-gray" src="../../../public/images/TanThanh.jpg" alt="...">
                                 <h5 class="title"><?= $row['name']?></h5>
                             </a>
                         </div>

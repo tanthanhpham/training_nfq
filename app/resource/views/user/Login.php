@@ -1,5 +1,6 @@
 <?php
 session_start();
+require '../controller/user/HandleLogin.php';
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -7,7 +8,7 @@ session_start();
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Sign Up</title>
+    <title>Login</title>
 
     <!-- Font Icon -->
     <link rel="stylesheet" href="../template/register/fonts/material-icon/css/material-design-iconic-font.min.css">
@@ -34,7 +35,7 @@ session_start();
                             ?>
                         </div>
                     <?php } ?>
-                    <form method="POST" action="HandleLogin.php" class="register-form" id="login-form">
+                    <form method="POST" action="./controller/user/HandleLogin.php" class="register-form" id="login-form">
                         <div class="form-group">
                             <label for="email"><i class="zmdi zmdi-account material-icons-name"></i></label>
                             <input type="email" name="email" id="email" placeholder="Your Email" required/>
