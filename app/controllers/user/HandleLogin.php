@@ -1,8 +1,7 @@
 <?php
 
-include '../utils/CheckValidation.php';
-session_start();
 $conn = connectDB();
+
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $email = $_POST["email"];
     $pass = $_POST["pass"];

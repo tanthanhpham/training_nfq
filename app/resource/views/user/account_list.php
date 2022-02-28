@@ -1,18 +1,7 @@
 <?php
-session_start();
+$conn = connectDB();
 
-$servername = "db";
-$username = "root";
-$dbname = "training_nfq";
-$password = "password";
-
-$conn = mysqli_connect($servername, $username, $password, $dbname, 3306);
-
-if (!$conn) {
-    die('Could not connect');
-}
-
-$getAllUsers = "Select * from users";
+$getAllUsers = "SELECT * FROM users";
 $users = $conn->query($getAllUsers);
 
 if (mysqli_num_rows($users) > 0) {
@@ -41,7 +30,8 @@ if (mysqli_num_rows($users) > 0) {
                     <td>" . $row['name'] . "</td>
                     <td>" . $row['email'] . "</td>
                     <td>" . $row['address'] . "</td>
-                    <td> <a href=\"/?view=delete&id=" . $row['id'] . "\" >Delete</a> | <a href=\"/?view=account-detail&id=" . $row['id'] . "\" >Detail</a></td>
+                    <td> <a href=\"/?view=delete&id=" . $row['id'] . "\" >Delete</a> | 
+                         <a href=\"/?view=account-detail&id=" . $row['id'] . "\" >Detail</a></td>
                 </tr>";
                     $i++;
                 }

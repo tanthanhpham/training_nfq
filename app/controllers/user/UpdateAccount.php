@@ -1,7 +1,5 @@
 <?php
 
-session_start();
-
 $conn = connectDB();
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
@@ -22,6 +20,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         </div>";
     } else {
         $_SESSION['loggedIn'] = $id;
-        header('location:  /?view=account-detail');
+        header("location:  /?view=account-detail&id=$id");
     }
 }

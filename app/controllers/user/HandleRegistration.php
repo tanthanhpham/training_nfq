@@ -1,11 +1,5 @@
 <?php
 
-include '../utils/CheckValidation.php';
-include '../utils/CheckExistedEmail.php';
-include '../utils/SetNotification.php';
-
-session_start();
-
 $conn = connectDB();
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {

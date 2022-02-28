@@ -1,16 +1,11 @@
 <?php
 
-session_start();
-$servername = "db";
-$username = "root";
-$dbname = "training_nfq";
-$password = "password";
-$conn = mysqli_connect($servername, $username, $password, $dbname, 3306);
-if (!$conn) {
-    die('Could not connect');
-}
+$conn = connectDB();
 
 $id = $_GET['id'];
+if(is_null($id)){
+    $id = $_SESSION['loggedIn'];
+}
 $findUser = "Select * from users where id = $id";
 $user = $conn->query($findUser);
 if (mysqli_num_rows($user) > 0) {
@@ -32,7 +27,7 @@ if (mysqli_num_rows($user) > 0) {
                                 <div class="col-md-12 pr-3">
                                     <div class="form-group">
                                         <label>First Name</label>
-                                        <input type="text" class="form-control" name="name" placeholder="Company" value="<?= $row['name']?>">
+                                        <input type="text" class="form-control" name="name" placeholder="Company" required value="<?= $row['name']?>">
                                     </div>
                                 </div>
                             </div>
@@ -40,7 +35,7 @@ if (mysqli_num_rows($user) > 0) {
                                 <div class="col-md-12">
                                     <div class="form-group">
                                         <label>Address</label>
-                                        <input type="text" class="form-control" name="address" placeholder="Home Address" value="<?= $row['address'] ?>">
+                                        <input type="text" class="form-control" name="address" placeholder="Home Address" required value="<?= $row['address'] ?>">
                                     </div>
                                 </div>
                             </div>
@@ -48,13 +43,13 @@ if (mysqli_num_rows($user) > 0) {
                                 <div class="col-md-4 pr-1">
                                     <div class="form-group">
                                         <label>Email</label>
-                                        <input type="text" class="form-control" name="email" placeholder="email" value="<?= $row['email']?>">
+                                        <input type="text" class="form-control" name="email" placeholder="email" required value="<?= $row['email']?>">
                                     </div>
                                 </div>
                                 <div class="col-md-4 px-1">
                                     <div class="form-group">
                                         <label>Country</label>
-                                        <input type="text" class="form-control" name="country" placeholder="Country" value="<?= $row['country'] ?>">
+                                        <input type="text" class="form-control" name="country" placeholder="Country" required value="<?= $row['country'] ?>">
                                     </div>
                                 </div>
                                 <div class="col-md-4 pl-1">

@@ -3,6 +3,9 @@
 session_start();
 include '../config/connectDB.php';
 include "../utils/utils.php";
+include '../utils/CheckValidation.php';
+include '../utils/CheckExistedEmail.php';
+include '../utils/SetNotification.php';
 
 $view = $_GET['view'] ?? '';
 
