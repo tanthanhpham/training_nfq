@@ -19,7 +19,7 @@ if (isset($_POST['height']) && isset($_POST['width'])) {
             $shape = $shape . '<br>';
         }
 
-        echo $shape;
+        echo " <pre class = \" container\">$shape</pre>";
     } else {
         echo "Please input positive number to draw";
     }

@@ -1,6 +1,6 @@
 <?php
 session_start();
-include '../controllers/user/HandleRegistration.php';
+require '../controllers/user/HandleRegistration.php';
 ?>
 <!DOCTYPE html>
 <html lang="en">

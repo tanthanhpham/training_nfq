@@ -24,12 +24,6 @@
             </div>
         </div>
     </div>
-    <div class="container"
-    <pre id="response"><?php
-        include '../controllers/draw/Draw.php';
-    ?>
-    </pre>
-    </div>
 <!--<script>-->
 <!--    function draw(){-->
 <!--        $.ajax({-->

@@ -1,5 +1,5 @@
 <?php
-include '../controllers/list_choice/HandleCookie.php';
+include '../controllers/exercises/HandleCookie.php';
 ?>
 <!doctype html>
 <html lang="en">
@@ -19,7 +19,7 @@ include '../controllers/list_choice/HandleCookie.php';
                 <div class="row">
                     <!-- Content -->
                     <?php
-                    include '../route/navigate.php';
+                    require '../route/navigate.php';
                     ?>
                     <!-- End Content -->
                 </div>
