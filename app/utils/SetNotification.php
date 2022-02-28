@@ -1,5 +1,11 @@
 <?php
 
-function setNotification($err, $notification){
-    $_SESSION[$err] = $notification;
+/**
+ * @param $sessionName
+ * @param $notification
+ * @return void
+ */
+function setNotification($sessionName, $notification)
+{
+    $_SESSION[$sessionName] = $notification;
 }

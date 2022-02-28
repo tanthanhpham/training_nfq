@@ -26,7 +26,7 @@ var mobile_menu_visible = 0,
     $sidebar,
     isWindows;
 
-$(document).ready(function() {
+$(document).ready(function () {
     window_width = $(window).width();
 
     // check if there is an image set for the sidebar's background
@@ -45,20 +45,20 @@ $(document).ready(function() {
         $("[data-toggle='switch']").bootstrapSwitch();
     }
 
-    $('.form-control').on("focus", function() {
+    $('.form-control').on("focus", function () {
         $(this).parent('.input-group').addClass("input-group-focus");
-    }).on("blur", function() {
+    }).on("blur", function () {
         $(this).parent(".input-group").removeClass("input-group-focus");
     });
 
     // Fixes sub-nav not working as expected on IOS
-    $('body').on('touchstart.dropdown', '.dropdown-menu', function(e) {
+    $('body').on('touchstart.dropdown', '.dropdown-menu', function (e) {
         e.stopPropagation();
     });
 });
 
 // activate collapse right menu when the windows is resized
-$(window).resize(function() {
+$(window).resize(function () {
     if ($(window).width() <= 991) {
         lbd.initRightMenu();
     }
@@ -68,7 +68,7 @@ lbd = {
     misc: {
         navbar_menu_visible: 0
     },
-    checkSidebarImage: function() {
+    checkSidebarImage: function () {
         $sidebar = $('.sidebar');
         image_src = $sidebar.data('image');
 
@@ -84,18 +84,17 @@ lbd = {
         }
     },
 
-    initRightMenu: function() {
+    initRightMenu: function () {
         $sidebar_wrapper = $('.sidebar-wrapper');
 
         if (!mobile_menu_initialized) {
-
             $navbar = $('nav').find('.navbar-collapse').first().clone(true);
 
             nav_content = '';
             mobile_menu_content = '';
 
             //add the content from the regular header to the mobile menu
-            $navbar.children('ul').each(function() {
+            $navbar.children('ul').each(function () {
 
                 content_buff = $(this).html();
                 nav_content = nav_content + content_buff;
@@ -112,7 +111,7 @@ lbd = {
             $nav_content.insertBefore($sidebar_nav);
             $navbar_form.insertBefore($nav_content);
 
-            $(".sidebar-wrapper .dropdown .dropdown-menu > li > a").click(function(event) {
+            $(".sidebar-wrapper .dropdown .dropdown-menu > li > a").click(function (event) {
                 event.stopPropagation();
 
             });
@@ -132,19 +131,19 @@ lbd = {
         if (!toggle_initialized) {
             $toggle = $('.navbar-toggler');
 
-            $toggle.click(function() {
+            $toggle.click(function () {
 
                 if (mobile_menu_visible == 1) {
                     $('html').removeClass('nav-open');
 
                     $('.close-layer').remove();
-                    setTimeout(function() {
+                    setTimeout(function () {
                         $toggle.removeClass('toggled');
                     }, 400);
 
                     mobile_menu_visible = 0;
                 } else {
-                    setTimeout(function() {
+                    setTimeout(function () {
                         $toggle.addClass('toggled');
                     }, 430);
 
@@ -154,17 +153,17 @@ lbd = {
                     $layer.css('height', main_panel_height + 'px');
                     $layer.appendTo(".main-panel");
 
-                    setTimeout(function() {
+                    setTimeout(function () {
                         $layer.addClass('visible');
                     }, 100);
 
-                    $layer.click(function() {
+                    $layer.click(function () {
                         $('html').removeClass('nav-open');
                         mobile_menu_visible = 0;
 
                         $layer.removeClass('visible');
 
-                        setTimeout(function() {
+                        setTimeout(function () {
                             $layer.remove();
                             $toggle.removeClass('toggled');
 
@@ -173,7 +172,6 @@ lbd = {
 
                     $('html').addClass('nav-open');
                     mobile_menu_visible = 1;
-
                 }
             });
 
@@ -189,16 +187,21 @@ lbd = {
 // N milliseconds. If `immediate` is passed, trigger the function on the
 // leading edge, instead of the trailing.
 
-function debounce(func, wait, immediate) {
+function debounce(func, wait, immediate)
+{
     var timeout;
-    return function() {
+    return function () {
         var context = this,
             args = arguments;
         clearTimeout(timeout);
-        timeout = setTimeout(function() {
+        timeout = setTimeout(function () {
             timeout = null;
-            if (!immediate) func.apply(context, args);
+            if (!immediate) {
+                func.apply(context, args);
+            }
         }, wait);
-        if (immediate && !timeout) func.apply(context, args);
+        if (immediate && !timeout) {
+            func.apply(context, args);
+        }
     };
 };

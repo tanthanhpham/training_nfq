@@ -1,4 +1,4 @@
-$().ready(function() {
+$().ready(function () {
     $sidebar = $('.sidebar');
     $sidebar_img_container = $sidebar.find('.sidebar-background');
 
@@ -14,10 +14,9 @@ $().ready(function() {
         if ($('.fixed-plugin .dropdown').hasClass('show-dropdown')) {
             $('.fixed-plugin .dropdown').addClass('show');
         }
-
     }
 
-    $('.fixed-plugin a').click(function(event) {
+    $('.fixed-plugin a').click(function (event) {
         // Alex if we click on switch, stop propagation of the event, so the dropdown will not be hide, otherwise we set the  section active
         if ($(this).hasClass('switch-trigger')) {
             if (event.stopPropagation) {
@@ -28,7 +27,7 @@ $().ready(function() {
         }
     });
 
-    $('.fixed-plugin .background-color span').click(function() {
+    $('.fixed-plugin .background-color span').click(function () {
         $(this).siblings().removeClass('active');
         $(this).addClass('active');
 
@@ -47,7 +46,7 @@ $().ready(function() {
         }
     });
 
-    $('.fixed-plugin .img-holder').click(function() {
+    $('.fixed-plugin .img-holder').click(function () {
         $full_page_background = $('.full-page-background');
 
         $(this).parent('li').siblings().removeClass('active');
@@ -57,7 +56,7 @@ $().ready(function() {
         var new_image = $(this).find("img").attr('src');
 
         if ($sidebar_img_container.length != 0 && $('.switch-sidebar-image input:checked').length != 0) {
-            $sidebar_img_container.fadeOut('fast', function() {
+            $sidebar_img_container.fadeOut('fast', function () {
                 $sidebar_img_container.css('background-image', 'url("' + new_image + '")');
                 $sidebar_img_container.fadeIn('fast');
             });
@@ -66,7 +65,7 @@ $().ready(function() {
         if ($full_page_background.length != 0 && $('.switch-sidebar-image input:checked').length != 0) {
             var new_image_full_page = $('.fixed-plugin li.active .img-holder').find('img').data('src');
 
-            $full_page_background.fadeOut('fast', function() {
+            $full_page_background.fadeOut('fast', function () {
                 $full_page_background.css('background-image', 'url("' + new_image_full_page + '")');
                 $full_page_background.fadeIn('fast');
             });
@@ -85,7 +84,7 @@ $().ready(function() {
         }
     });
 
-    $('.switch input').on("switchChange.bootstrapSwitch", function() {
+    $('.switch input').on("switchChange.bootstrapSwitch", function () {
 
         $full_page_background = $('.full-page-background');
 
@@ -122,8 +121,8 @@ $().ready(function() {
 type = ['primary', 'info', 'success', 'warning', 'danger'];
 
 demo = {
-    initPickColor: function() {
-        $('.pick-class-label').click(function() {
+    initPickColor: function () {
+        $('.pick-class-label').click(function () {
             var new_class = $(this).attr('new-class');
             var old_class = $('#display-buttons').attr('data-class');
             var display_div = $('#display-buttons');
@@ -136,7 +135,7 @@ demo = {
         });
     },
 
-    initDocumentationCharts: function() {
+    initDocumentationCharts: function () {
         /* ----------==========     Daily Sales Chart initialization For Documentation    ==========---------- */
 
         dataDailySalesChart = {
@@ -150,13 +149,13 @@ demo = {
             lineSmooth: Chartist.Interpolation.cardinal({
                 tension: 0
             }),
-            low: 0,
-            high: 50, // creative tim: we recommend you to set the high sa the biggest value + something for a better look
-            chartPadding: {
-                top: 0,
-                right: 0,
-                bottom: 0,
-                left: 0
+        low: 0,
+        high: 50, // creative tim: we recommend you to set the high sa the biggest value + something for a better look
+        chartPadding: {
+            top: 0,
+            right: 0,
+            bottom: 0,
+            left: 0
             },
         }
 
@@ -165,7 +164,7 @@ demo = {
         // lbd.startAnimationForLineChart(dailySalesChart);
     },
 
-    initDashboardPageCharts: function() {
+    initDashboardPageCharts: function () {
 
         var dataPreferences = {
             series: [
@@ -233,19 +232,19 @@ demo = {
             lineSmooth: Chartist.Interpolation.simple({
                 divisor: 3
             }),
-            showLine: false,
-            showPoint: false,
-            fullWidth: false
+        showLine: false,
+        showPoint: false,
+        fullWidth: false
         };
 
         var responsiveSales = [
             ['screen and (max-width: 640px)', {
                 axisX: {
-                    labelInterpolationFnc: function(value) {
+                    labelInterpolationFnc: function (value) {
                         return value[0];
                     }
                 }
-            }]
+        }]
         ];
 
         var chartHours = Chartist.Line('#chartHours', dataSales, optionsSales, responsiveSales);
@@ -272,11 +271,11 @@ demo = {
             ['screen and (max-width: 640px)', {
                 seriesBarDistance: 5,
                 axisX: {
-                    labelInterpolationFnc: function(value) {
+                    labelInterpolationFnc: function (value) {
                         return value[0];
                     }
                 }
-            }]
+        }]
         ];
 
         var chartActivity = Chartist.Bar('#chartActivity', data, options, responsiveOptions);
@@ -365,7 +364,7 @@ demo = {
 
     },
 
-    initGoogleMaps: function() {
+    initGoogleMaps: function () {
         var myLatlng = new google.maps.LatLng(40.748817, -73.985428);
         var mapOptions = {
             zoom: 13,
@@ -500,7 +499,7 @@ demo = {
         marker.setMap(map);
     },
 
-    showNotification: function(from, align) {
+    showNotification: function (from, align) {
         color = Math.floor((Math.random() * 4) + 1);
 
         $.notify({
