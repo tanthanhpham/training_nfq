@@ -15,6 +15,6 @@ if ($view == '') {
 } elseif ($view == 'account-detail') {
     include('../controllers/user/UpdateAccount.php');
     include('../resource/views/user/account_detail.php');
-}elseif ($view == 'delete'){
+} elseif ($view == 'delete') {
     include('../controllers/user/DeleteAccount.php');
 }

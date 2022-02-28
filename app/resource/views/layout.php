@@ -4,15 +4,15 @@ include '../controllers/exercises/HandleCookie.php';
 <!doctype html>
 <html lang="en">
 <head>
-    <?php include '../resource/views/layout/head.html'?>
+    <?php include '../resource/views/layout/head.php'?>
 </head>
 
 <body>
 <div class="wrapper">
-    <?php include '../resource/views/layout/sidebar.html' ?>
+    <?php include '../resource/views/layout/sidebar.php' ?>
     <div class="main-panel">
         <!-- Header -->
-        <?php include '../resource/views//layout/header.html' ?>
+        <?php include '../resource/views//layout/header.php' ?>
         <!-- End Header -->
         <div class="content">
             <div class="container-fluid">
@@ -26,7 +26,7 @@ include '../controllers/exercises/HandleCookie.php';
             </div>
         </div>
         <!-- Footer -->
-        <? include '../resource/views/layout/footer.html' ?>
+        <? include '../resource/views/layout/footer.php' ?>
         <!-- End Footer -->
     </div>
 </div>

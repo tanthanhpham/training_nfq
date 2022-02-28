@@ -21,8 +21,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         header("location: /?view=signup");
         return;
     }
-
-    if (!checkExistedEmail($email, $conn)) {
+    if (checkExistedEmail($email, $conn)) {
         setNotification('error', 'Email existed, please sign in or use other one');
         $_SESSION["oldData"] = ["name" => $name,"email" => $email];
         header("location: /?view=signup");

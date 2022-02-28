@@ -10,7 +10,7 @@ if (!$conn) {
     die('Could not connect');
 }
 
-$id = $_SESSION['loggedIn'];
+$id = $_GET['id'];
 $findUser = "Select * from users where id = $id";
 $user = $conn->query($findUser);
 if (mysqli_num_rows($user) > 0) {
@@ -64,7 +64,13 @@ if (mysqli_num_rows($user) > 0) {
                                     </div>
                                 </div>
                             </div>
+                            <?php
+                            if ($_SESSION['loggedIn'] == $id) {
+                                ?>
                             <button type="submit" class="btn btn-info btn-fill pull-right">Update Profile</button>
+                                <?php
+                            }
+                            ?>
                             <div class="clearfix"></div>
                         </form>
                     </div>

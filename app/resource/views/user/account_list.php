@@ -30,7 +30,7 @@ if (mysqli_num_rows($users) > 0) {
                 <th>Name</th>
                 <th>Email</th>
                 <th>Address</th>
-                <th>Country</th>
+                <th>Action</th>
                 </thead>
                 <tbody>
                 <?php
@@ -41,7 +41,7 @@ if (mysqli_num_rows($users) > 0) {
                     <td>" . $row['name'] . "</td>
                     <td>" . $row['email'] . "</td>
                     <td>" . $row['address'] . "</td>
-                    <td> <a href=\"/?view=delete&id=". $row['id']."\" >Xóa</a></td>
+                    <td> <a href=\"/?view=delete&id=" . $row['id'] . "\" >Delete</a> | <a href=\"/?view=account-detail&id=" . $row['id'] . "\" >Detail</a></td>
                 </tr>";
                     $i++;
                 }
