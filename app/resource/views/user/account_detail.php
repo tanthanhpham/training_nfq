@@ -3,7 +3,7 @@
 $conn = connectDB();
 
 $id = $_GET['id'];
-if(is_null($id)){
+if (is_null($id)) {
     $id = $_SESSION['loggedIn'];
 }
 $findUser = "Select * from users where id = $id";
